@@ -3,17 +3,15 @@
 
 <head>
 
-	<base href="/app/"/>
-	<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css"/>
-	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
-	<script src="../node_modules/systemjs/dist/system.src.js"></script>
-	<script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
-	<script>
-		System.config({
-			packages: {'js' : {defaultExtension: 'js'}}
-		});
-		System.import('js/bootstrap').catch(console.log.bind(console));
-	</script>
+    <base href="/app/"/>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script>
+        System.config({
+            packages: {'js' : {defaultExtension: 'js'}}
+        });
+        System.import('js/bootstrap').catch(console.log.bind(console));
+    </script>
 
 </head>
 
