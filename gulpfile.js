@@ -57,9 +57,9 @@ gulp.task('sass', function() {
 
 
 
-gulp.task('serve', ['clean', 'ts-lint', 'sass', 'compile-ts'], function() {
+gulp.task('serve', ['clean', 'sass', 'compile-ts'], function() {
 
-    gulp.watch([config.source.ts, config.source.scss, config.source.html], ['ts-lint', 'sass', 'compile-ts', 'copy' ]);
+    gulp.watch([config.source.ts, config.source.scss, config.source.html], [ 'sass', 'compile-ts', 'copy' ]);
 
     browserSync({
         port: 3000,
@@ -77,4 +77,4 @@ gulp.task('serve', ['clean', 'ts-lint', 'sass', 'compile-ts'], function() {
 
 });
 
-gulp.task('default', ['clean','copy', 'serve']);
+gulp.task('default', ['copy', 'serve']);
