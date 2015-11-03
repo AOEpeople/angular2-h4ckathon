@@ -1,5 +1,5 @@
 import {Component,NgFor} from 'angular2/angular2';
-// import {NavBarComponent} from './navbar.component';
+import {ViewEncapsulation} from 'angular2/angular2';
 import {SliderComponent} from './slider.component';
 
 @Component({
@@ -9,10 +9,13 @@ import {SliderComponent} from './slider.component';
     <div class="panel panel-default">
     
       <slider *ng-for="#og of optiongroups" [option-group]="og"></slider>
-    
+
     </div>
     `,
-  directives: [NgFor, SliderComponent]
+  directives: [NgFor, SliderComponent],
+  styleUrls: ['css/mixer.css'],
+  encapsulation: ViewEncapsulation.Native
+
 })
 export class MixerComponent  {
   public title = 'hello world';
