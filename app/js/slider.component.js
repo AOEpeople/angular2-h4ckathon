@@ -31,7 +31,7 @@ System.register(['angular2/angular2'], function(exports_1) {
                 SliderComponent = __decorate([
                     angular2_1.Component({
                         selector: 'slider',
-                        template: "\n\t<div>\n\t\t<label>{{optionGroup.name}}</label>\n\t\t<input type=\"range\" [value]=\"optionGroup.value\" max=\"500\" (change)=\"doUpdate($event.target.value)\"></input>\n\t\t<span class=\"range-value\">{{optionGroup.value}}</span>\n\t</div>\n\t",
+                        template: "\n    <div>\n        <label>{{optionGroup.name}}</label>\n        <input type=\"range\" [value]=\"optionGroup.value\" max=\"500\" (change)=\"doUpdate($event.target.value)\"></input>\n        <span class=\"range-value\">{{optionGroup.value}}</span>\n    </div>\n    ",
                         directives: []
                     }), 
                     __metadata('design:paramtypes', [])

@@ -57,7 +57,7 @@ gulp.task('sass', function() {
 
 
 
-gulp.task('serve', ['ts-lint', 'sass', 'compile-ts', ], function() {
+gulp.task('serve', ['clean', 'ts-lint', 'sass', 'compile-ts', ], function() {
 
     gulp.watch([config.source.ts, config.source.scss], ['ts-lint', 'sass', 'compile-ts' ]);
 

@@ -33,7 +33,7 @@ System.register(['angular2/angular2', './slider.component'], function(exports_1)
                 MixerComponent = __decorate([
                     angular2_1.Component({
                         selector: 'mixer',
-                        template: "\n    \n    <div class=\"panel panel-default\">\n    \n      <slider *ng-for=\"#og of optiongroups\" [option-group]=\"og\"></slider>\n\n    </div>\n    ",
+                        template: "\n    <div class=\"panel panel-default\">\n    \n      <slider *ng-for=\"#og of optiongroups\" [option-group]=\"og\"></slider>\n\n    </div>\n    ",
                         directives: [angular2_1.NgFor, slider_component_1.SliderComponent],
                         styleUrls: ['css/mixer.css'],
                         encapsulation: angular2_2.ViewEncapsulation.Native
