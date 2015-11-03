@@ -2,7 +2,14 @@
     background: rgba(0, 0, 0, .8);
     padding: 40px;
     display: block;
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
 }
+
+h1 {
+    color: rgba(255,255,255,1)
+}
+
 slider {
     display: block;
     margin-bottom: 20px;

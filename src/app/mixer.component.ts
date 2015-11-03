@@ -6,7 +6,7 @@ import {SliderComponent} from './slider.component';
   selector: 'mixer',
   template: `
     <div class="panel panel-default">
-    
+      <h1>Mixer</h1>
       <slider *ng-for="#og of optiongroups" [option-group]="og"></slider>
 
     </div>
