@@ -3,7 +3,9 @@
 
 #Installation
 
-'npm install'
+```
+npm install
+```
 
 
 Run 'gulp' for live preview
