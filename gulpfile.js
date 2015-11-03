@@ -59,7 +59,7 @@ gulp.task('sass', function() {
 
 gulp.task('serve', ['clean', 'ts-lint', 'sass', 'compile-ts'], function() {
 
-    gulp.watch([config.source.ts, config.source.scss], ['ts-lint', 'sass', 'compile-ts' ]);
+    gulp.watch([config.source.ts, config.source.scss, config.source.html], ['ts-lint', 'sass', 'compile-ts', 'copy' ]);
 
     browserSync({
         port: 3000,
