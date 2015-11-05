@@ -77,4 +77,4 @@ gulp.task('serve', ['clean', 'sass', 'compile-ts'], function() {
 
 });
 
-gulp.task('default', ['copy', 'serve']);
+gulp.task('default', ['clean', 'copy', 'serve']);
